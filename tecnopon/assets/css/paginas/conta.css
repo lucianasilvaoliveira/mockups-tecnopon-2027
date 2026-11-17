@@ -5,7 +5,7 @@
 .conta-topo .faixa{position:relative;z-index:1}
 .conta-topo h1{color:#fff}
 .conta-topo p{color:#c9dbe6}
-.conta-topo .trilha,.conta-topo .trilha a{color:#9fb8c8}
+.conta-topo .trilha,.conta-topo .trilha a{color:#b9cfdc}
 .conta-topo .trilha a:hover{color:#fff}
 .conta-corpo{background:var(--fundo);padding:0 0 88px}
 .conta-corpo>.faixa>.woocommerce{margin-top:-36px;position:relative;z-index:2}
@@ -31,8 +31,8 @@ main.conta .woocommerce .botao--claro{background:#fff;border-color:#fff;color:va
 main.conta .woocommerce .botao--claro:hover{background:var(--azul-50);border-color:var(--azul-50);color:var(--azul-esc)}
 main.conta .woocommerce .botao--comprar{background:var(--verde);border-color:var(--verde)}
 main.conta .woocommerce .botao--comprar:hover{background:var(--verde-esc);border-color:var(--verde-esc)}
-main.conta .woocommerce .botao--whats{background:#1f9d55;border-color:#1f9d55}
-main.conta .woocommerce .botao--whats:hover{background:#178245;border-color:#178245}
+main.conta .woocommerce .botao--whats{background:#167a40;border-color:#167a40}
+main.conta .woocommerce .botao--whats:hover{background:#106338;border-color:#106338}
 main.conta .woocommerce .botao--bloco{width:100%}
 main.conta .woocommerce .botao--pequeno{min-height:44px;padding:8px 16px;font-size:14px}
 main.conta .woocommerce .conta-menu a{color:var(--tinta-2)}

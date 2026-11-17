@@ -126,7 +126,7 @@ a.pg-canal:hover{border-color:var(--azul);box-shadow:var(--sombra);color:var(--t
 .woocommerce .form-row{margin:0 0 16px}
 .woocommerce .form-row label{display:block;margin-bottom:6px;font-size:14px;font-weight:600}
 .woocommerce .required{color:#a3261b;text-decoration:none}
-.woocommerce a:not(.button){color:var(--azul)}
+:where(.woocommerce a:not(.button,.botao)){color:var(--azul)}
 
 /* Avisos (com ícone, ver woocommerce/notices) */
 .pg-aviso{display:flex;align-items:flex-start;gap:12px}
@@ -275,6 +275,7 @@ table.order_details tfoot th{text-align:left;text-transform:none;letter-spacing:
 @media (max-width:719px){.pg-obrigado__topo{flex-direction:column;gap:14px}.woocommerce-customer-details .col2-set{grid-template-columns:1fr}.pg-obrigado__acoes .botao{width:100%}}
 .v-b .pg-obrigado__passos{background:var(--azul-noite);border:0;color:#c6d5de}
 .v-b .pg-obrigado__passos h3{color:#fff}
+.v-b .pg-obrigado__passos .nota{color:#b9cfdc}
 .v-b .pg-obrigado__resumo,.v-b .pg-confianca li,.v-b .woocommerce-customer-details address{border-radius:6px}
 .v-c .pg-confianca li,.v-c .pg-obrigado__resumo li{background:var(--fundo);border-color:transparent}
 .v-c .pg-obrigado__resumo{border-color:transparent;background:#fff;gap:6px}
@@ -333,8 +334,8 @@ table.order_details tfoot th{text-align:left;text-transform:none;letter-spacing:
 .pg-corpo--extra{padding:48px 0 56px}.pg-corpo--extra h2{font-size:24px;margin-bottom:6px}.pg-como li a{font-weight:600}
 
 /* Correções de especificidade dentro do Woo */
-.woocommerce a.botao{color:#fff}
-.woocommerce a.botao:hover{color:#fff}
+.woocommerce a.botao,.woocommerce a.botao:hover{color:#fff}
+.woocommerce a.botao--claro,.woocommerce a.botao--claro:hover{color:var(--azul-esc)}
 .woocommerce a.botao--contorno{color:var(--azul);background:transparent}
 .woocommerce a.botao--contorno:hover{color:#fff;background:var(--azul)}
 .woocommerce a.botao--comprar{background:var(--verde)}

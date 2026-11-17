@@ -1,0 +1,8 @@
+/* Revisão dos ícones (17/11/2026). Só correções de ícone; nada de layout. */
+
+/* Menu da conta no celular: tira rolável na horizontal. Os itens além da borda direita
+   pareciam "cortados"; a máscara faz a borda parecer rolagem de propósito e o respiro
+   final deixa o último item sair de baixo dela. */
+@media (max-width:899px){
+	.conta-menu ul{padding-right:36px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent)}
+}

@@ -1,0 +1,22 @@
+/* Desenhos de produto sem foto: fundo branco como as fotos, traço fino azul, mesma proporção. */
+.ilustra{container-type:inline-size;position:relative;display:grid;place-items:center;width:100%;height:100%;aspect-ratio:1/1;border-radius:0;background:none;color:var(--azul)}
+.ilustra__svg{width:94%;height:auto;max-height:94%}
+.ilustra--equipamento{display:grid;gap:0;background:none}
+.ilustra--equipamento .ilustra__svg{width:90%;margin-top:-6%}
+.ilustra--equipamento small{position:absolute;left:0;right:0;bottom:3%;text-align:center;font-size:11px;font-weight:500;letter-spacing:.02em;text-transform:none;color:var(--tinta-3)}
+/* Miniaturas: só o desenho, sem texto. */
+@container (max-width:150px){
+	.ilustra--equipamento small{display:none}
+	.ilustra--equipamento .ilustra__svg{width:96%;margin-top:0}
+}
+.ilustra--mini{aspect-ratio:auto}
+.ilustra--mini .ilustra__svg{width:100%;max-height:none;margin:0}
+.ilustra--mini small{display:none}
+.pg-item__img .ilustra__svg,.pg-ped-item__img .ilustra__svg{width:100%;max-height:none}
+.prod-galeria__principal .ilustra{max-width:none}
+.prod-galeria__principal .ilustra__svg{width:88%}
+.prod-galeria__principal .ilustra--equipamento small{font-size:13px;bottom:6%}
+.v-c .ilustra--equipamento small{color:var(--tinta-2)}
+@media (max-width:600px){
+	.ilustra--equipamento small{font-size:10.5px}
+}

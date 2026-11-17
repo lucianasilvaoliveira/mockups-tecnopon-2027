@@ -9,6 +9,9 @@
 .inicio-hero__foto img{width:100%;aspect-ratio:3/2;object-fit:contain}
 .inicio-hero__legenda{display:block;padding:12px 18px;border-top:1px solid var(--linha);font-weight:650;font-size:14.5px;background:#fff}
 .inicio-hero__legenda small{display:block;font-size:11.5px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:var(--azul)}
+.inicio-hero__link{margin:18px 0 0}
+.inicio-hero__link a{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.inicio-hero__link .ico{width:18px;height:18px}
 .inicio-difs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:48px 0 0;padding:0;background:#fff;border:1px solid var(--linha);border-bottom:0;border-radius:var(--raio-g) var(--raio-g) 0 0}
 .inicio-difs li{display:flex;gap:14px;align-items:flex-start;padding:22px 24px;font-size:14px;color:var(--tinta-2);line-height:1.4}
 .inicio-difs li+li{border-left:1px solid var(--linha)}
@@ -141,10 +144,28 @@
 .v-c .inicio-cats__destaque a{background:var(--fundo)}
 .v-c .inicio-cats__mini{border-radius:50%}
 .v-c .inicio-cats__demais a{border-radius:999px;padding-right:16px}
-.v-c .inicio-medida{background:var(--azul);margin:0 24px;border-radius:28px}
+.v-c .inicio-medida .sobretitulo{color:#e3f3fb}
+.v-c .inicio-medida{color:#e6f1f7;background:var(--azul);margin:0 24px;border-radius:28px}
 .v-c .inicio-medida__faixa{padding-left:24px;padding-right:24px}
 .v-c .secao--cinza{background:#fff}
 .v-c .inicio-revenda__faixa{border-radius:28px}
 @media (max-width:759px){.v-c .inicio-hero__faixa{padding:36px 18px 0;border-radius:24px}.v-c .inicio-medida{margin:0 16px}}
 .inicio-hero__texto,.inicio-hero__foto{min-width:0}
 .inicio-bombas__grade,.inicio-consum .grade-produtos{min-width:0}
+
+/* Assistência e calibração */
+.inicio-assist__faixa{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.inicio-assist p:not(.sobretitulo){max-width:680px;margin:0;font-size:17px;color:var(--tinta-2)}
+.inicio-assist .botao{flex:none}
+.inicio-assist .ico{width:18px;height:18px}
+.inicio-confianca .secao__topo{align-items:center}
+.inicio-confianca .secao__topo .botao{flex:none}
+.inicio-bombas{padding-top:72px}
+.v-b .inicio-hero__link a{color:#9fd8f5}
+.v-c .inicio-hero__link{text-align:center}
+@media (max-width:759px){
+	.inicio-assist__faixa{flex-direction:column;align-items:flex-start;gap:20px}
+	.inicio-assist .botao{width:100%}
+}
+.v-b .inicio-hero .botao--contorno{border-color:#fff;color:#fff}
+.v-b .inicio-hero .botao--contorno:hover{background:#fff;color:var(--azul-esc)}
