@@ -14,11 +14,8 @@
 
 		var abrir = function () {
 			rolagem = window.scrollY;
-			var r = cabeca.getBoundingClientRect();
-			document.documentElement.style.setProperty('--cabeca-topo', Math.max(0, r.top) + 'px');
-			document.documentElement.style.setProperty('--menu-topo', Math.max(0, r.bottom) + 'px');
-			/* Trava que funciona no iOS: o body vira fixo na posição atual e volta ao mesmo ponto ao fechar. */
-			document.body.style.top = -rolagem + 'px';
+			document.documentElement.style.setProperty('--menu-topo', Math.max(0, cabeca.getBoundingClientRect().bottom) + 'px');
+			/* Trava por overflow (nada sai do lugar); o véu bloqueia o toque e o painel contém a própria rolagem. */
 			document.documentElement.classList.add('menu-aberto');
 			menu.classList.add('is-aberto');
 			botao.setAttribute('aria-expanded', 'true');
@@ -30,8 +27,7 @@
 			if (!menu.classList.contains('is-aberto')) return;
 			menu.classList.remove('is-aberto');
 			document.documentElement.classList.remove('menu-aberto');
-			document.body.style.top = '';
-			window.scrollTo({ top: rolagem, behavior: 'instant' });
+			if (Math.abs(window.scrollY - rolagem) > 1) window.scrollTo({ top: rolagem, behavior: 'instant' });
 			botao.setAttribute('aria-expanded', 'false');
 			botao.setAttribute('aria-label', 'Abrir menu');
 			if (devolverFoco) botao.focus({ preventScroll: true });
