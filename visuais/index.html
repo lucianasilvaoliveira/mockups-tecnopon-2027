@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MS Tecnopon · Opções de visual</title>
+<link rel="icon" href="../tecnopon/assets/img/icone.svg" type="image/svg+xml">
+<style>
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{display:flex;flex-direction:column;background:#20262b;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;color:#fff}
+.palco{flex:1;min-height:0;display:flex;justify-content:center}
+iframe{border:0;width:100%;height:100%;background:#fff}
+.celular .palco{padding:16px 0}
+.celular iframe{width:390px;border-radius:22px;box-shadow:0 0 0 8px #0c0f11}
+.barra{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#0c0f11;border-top:1px solid #333c43}
+.barra span{color:#aab4bb;margin-right:6px}
+.barra button,.barra a{font:inherit;color:#fff;background:#232b31;border:1px solid #3b464e;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none}
+.barra button:hover,.barra a:hover{border-color:#8fa0ab}
+.barra button[aria-pressed="true"]{background:#fff;color:#0c0f11;border-color:#fff}
+.barra small{font-weight:400;opacity:.75;margin-left:6px}
+.sep{width:1px;height:24px;background:#3b464e;margin:0 8px}
+:focus-visible{outline:3px solid #4db8ea;outline-offset:2px}
+@media (max-width:700px){.barra small,.barra span,.sep,#modo{display:none}.barra button,.barra a{padding:10px 14px}}
+</style>
+</head>
+<body>
+<div class="palco"><iframe id="quadro" title="Visual selecionado"></iframe></div>
+<div class="barra" role="toolbar" aria-label="Escolher visual">
+	<span>Visual:</span>
+	<button type="button" data-op="1">Opção 1<small>Corporativo claro</small></button>
+	<button type="button" data-op="2">Opção 2<small>Institucional azul-marinho</small></button>
+	<button type="button" data-op="3">Opção 3<small>Catálogo técnico</small></button>
+	<button type="button" data-op="4">Opção 4<small>Nova, com loja e produto</small></button>
+	<i class="sep"></i>
+	<button type="button" id="modo" aria-pressed="false">Ver no celular</button>
+	<a id="abrir" href="#" target="_blank" rel="noopener">Abrir em nova janela</a>
+</div>
+<script>
+(function(){
+	var paginas={1:'../a/inicio.html',2:'opcao-2.html',3:'opcao-3.html',4:'opcao-4.html'};
+	var quadro=document.getElementById('quadro'),abrir=document.getElementById('abrir'),modo=document.getElementById('modo');
+	var botoes=document.querySelectorAll('[data-op]');
+	function mostrar(n){
+		if(!paginas[n])n=1;
+		quadro.src=paginas[n];abrir.href=paginas[n];
+		botoes.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.op==n?'true':'false')});
+		history.replaceState(null,'','#'+n);
+	}
+	botoes.forEach(function(b){b.addEventListener('click',function(){mostrar(b.dataset.op)})});
+	modo.addEventListener('click',function(){
+		var on=document.body.classList.toggle('celular');
+		modo.setAttribute('aria-pressed',on?'true':'false');
+		modo.textContent=on?'Ver no computador':'Ver no celular';
+	});
+	document.addEventListener('keydown',function(e){if(e.key>='1'&&e.key<='4')mostrar(e.key)});
+	mostrar(parseInt(location.hash.slice(1),10)||1);
+})();
+</script>
+</body>
+</html>

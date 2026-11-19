@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MS Tecnopon · Opção 2 · Institucional azul-marinho</title>
+<link rel="icon" href="../tecnopon/assets/img/icone.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#076799;--azul-esc:#054d73;--noite:#0b2533;--tinta:#17232c;--tinta-2:#4b5a65;--linha:#dce4ea;--fundo:#f3f6f9;--raio:6px;--faixa:1240px;--fonte:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:400 16.5px/1.6 var(--fonte);color:var(--tinta);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fonte);margin:0;color:inherit;line-height:1.15;letter-spacing:-.015em}
+h1 em{font-style:normal}
+p{margin:0}
+ul{list-style:none;margin:0;padding:0}
+.faixa{max-width:var(--faixa);margin:0 auto;padding:0 32px}
+.mono{font:600 12.5px/1.4 var(--fonte);letter-spacing:.1em;text-transform:uppercase}
+.bt{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;font:600 15.5px/1 var(--fonte);text-decoration:none;border:1.5px solid var(--azul);background:var(--azul);color:#fff;border-radius:var(--raio);cursor:pointer;transition:background .15s,color .15s,border-color .15s;white-space:nowrap}
+.bt:hover{background:var(--azul-esc);border-color:var(--azul-esc)}
+.bt--linha{background:transparent;color:var(--azul)}
+.bt--linha:hover{background:var(--azul);color:#fff}
+.bt i{font-style:normal}
+a:focus-visible,button:focus-visible{outline:3px solid #2ea3d5;outline-offset:3px}
+.topo .faixa{display:flex;justify-content:space-between;gap:24px;padding-top:9px;padding-bottom:9px}
+.topo ul{display:flex;gap:26px}
+.topo a{text-decoration:none}
+.topo a:hover{text-decoration:underline}
+.cabeca{position:sticky;top:0;z-index:20}
+.cabeca .faixa{display:flex;align-items:center;gap:32px;min-height:84px}
+.cabeca__logo img{height:52px;width:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap;padding:8px 0;border-bottom:2px solid transparent}
+.cabeca .bt{min-height:44px;padding:0 20px;font-size:15px}
+.hero .faixa:first-child{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero__acoes{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 20px}
+.peca{position:relative;display:block;text-decoration:none}
+.peca__dados{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.peca__dados b{display:block;font-weight:700;font-size:17px;line-height:1.25;margin-top:2px}
+.difs{display:grid;grid-template-columns:repeat(4,1fr)}
+.difs b{display:block;font-size:17px;font-weight:700;line-height:1.25;margin-bottom:4px}
+.difs span:last-child{display:block;font-size:14.5px;line-height:1.45;color:var(--tinta-2)}
+.secao{padding:88px 0}
+.cab{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:44px}
+.cab h2,.bombas h2,.assist h2{font-size:clamp(27px,3.2vw,40px);font-weight:700;margin-top:12px}
+.cab p{color:var(--tinta-2);max-width:54ch}
+.num{color:var(--azul)}
+.cats a{text-decoration:none}
+.cats__txt b{display:block;font-size:18px;font-weight:700;line-height:1.25}
+.cats__txt small{display:block;margin-top:4px;color:var(--tinta-2);font-weight:500;letter-spacing:.04em}
+.cats__img img{width:100%;height:100%;object-fit:contain}
+.outras a{text-decoration:none}
+.bombas{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:44px}
+.bombas p{color:var(--tinta-2);margin:16px 0 26px}
+.checks li{display:flex;gap:14px;align-items:flex-start;font-weight:500}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{display:flex;flex-direction:column;background:#fff}
+.card__img{aspect-ratio:1;display:grid;place-items:center;padding:16px;background:#fff}
+.card__img img{max-height:100%;object-fit:contain}
+.card__corpo{padding:16px 16px 6px;flex:1}
+.card__meta{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--tinta-2)}
+.card__meta b{color:var(--azul)}
+.card h3{font-size:16.5px;font-weight:700;line-height:1.3;margin-top:8px;letter-spacing:0}
+.card .bt{margin:12px 16px 16px;min-height:44px;font-size:14.5px;justify-content:center;padding:0 10px}
+.medida .faixa{display:grid;grid-template-columns:1.5fr auto;gap:48px;align-items:center}
+.medida h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;margin:12px 0 16px}
+.medida p:not(.mono){max-width:64ch}
+.assist{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.assist p:not(.mono):not(.assist__num){color:var(--tinta-2);max-width:60ch;margin:16px 0 26px}
+.assist__num{font-weight:700;line-height:.9;letter-spacing:-.04em;color:var(--azul)}
+.assist__num small{display:block;font:600 12.5px/1.4 var(--fonte);letter-spacing:.1em;text-transform:uppercase;margin-top:14px}
+.prova{display:grid;grid-template-columns:repeat(4,1fr)}
+.prova h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.prova p{color:var(--tinta-2);font-size:15.5px;line-height:1.55}
+.jeitos{display:grid;grid-template-columns:repeat(3,1fr)}
+.jeito{display:flex;flex-direction:column;align-items:flex-start;padding:30px 28px}
+.jeito h3{font-size:22px;font-weight:700;margin:14px 0 10px}
+.jeito p:not(.mono){color:var(--tinta-2);flex:1;margin-bottom:24px}
+.revenda .faixa{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.revenda h2{font-size:clamp(24px,2.8vw,32px);font-weight:700;margin-bottom:8px}
+.revenda p{max-width:60ch}
+.rodape{padding:64px 0 0}
+.rodape__grade{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:48px;padding-bottom:52px}
+.rodape img{height:60px;width:auto;margin-bottom:18px}
+.rodape h4{font:700 13px/1.4 var(--fonte);letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px}
+.rodape li{margin-bottom:8px;font-size:15.5px}
+.rodape li a{text-decoration:none}
+.rodape li a:hover{text-decoration:underline}
+.rodape__base{padding:20px 32px 26px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12px;letter-spacing:.03em;text-transform:none;font-weight:400}
+
+.topo{background:var(--noite);color:#c5d3dc;border-bottom:1px solid rgba(255,255,255,.1)}
+.topo .mono,.topo{font-size:12px}
+.cabeca{background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 14px rgba(11,37,51,.06)}
+.nav a{color:var(--tinta)}.nav a:hover{color:var(--azul);border-color:var(--azul)}
+.hero{background:radial-gradient(circle at 85% 20%,#0f5a84 0,transparent 55%),linear-gradient(135deg,#0b2533 0%,#0a3a55 100%);color:#fff;padding:76px 0 0}
+.hero .num{color:#7fd0f5}
+.hero h1{font-size:clamp(32px,4.3vw,56px);font-weight:800;line-height:1.1;margin:16px 0 20px}
+.hero h1 em{color:#7fd0f5}
+.hero__sub{font-size:18px;color:#cfdde6;max-width:56ch}
+.hero .bt{background:#fff;border-color:#fff;color:var(--azul-esc)}
+.hero .bt:hover{background:#e6f1f7;border-color:#e6f1f7}
+.hero .bt--linha{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.hero .bt--linha:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
+.hero__whats{color:#cfdde6;font-size:15px}
+.hero__whats:hover{color:#fff}
+.peca{background:#fff;color:var(--tinta);border-radius:12px;padding:22px 22px 20px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.peca__dados{border-top:1px solid var(--linha);padding-top:14px;margin-top:8px}
+.peca__dados .mono{color:var(--azul);font-size:11.5px}
+.hero .faixa:last-child{margin-top:64px;transform:translateY(50%);margin-bottom:-10px}
+.difs{background:#fff;color:var(--tinta);border-radius:12px;box-shadow:0 12px 40px rgba(11,37,51,.14);border:1px solid var(--linha)}
+.difs li{padding:24px 24px 26px;border-left:1px solid var(--linha)}
+.difs li:first-child{border-left:0}
+.difs .mono{display:inline-block;color:var(--azul);background:#e6f1f7;border-radius:999px;padding:3px 10px;margin-bottom:10px;font-size:11.5px}
+#equipamentos{padding-top:150px}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cats a{display:grid;grid-template-columns:200px 1fr;align-items:stretch;background:#fff;border:1px solid var(--linha);border-radius:10px;overflow:hidden;height:100%;transition:border-color .15s,box-shadow .15s}
+.cats a:hover{border-color:var(--azul);box-shadow:0 8px 26px rgba(11,37,51,.1)}
+.cats__img{height:140px;padding:12px;background:#fff;border-right:1px solid var(--linha)}
+.cats__txt{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px}
+.cats__txt b{font-size:19px}
+.cats__txt i{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#e6f1f7;color:var(--azul);font-style:normal;font-weight:700}
+.outras{margin-top:36px;padding-top:28px;border-top:1px solid var(--linha)}
+.outras p{color:var(--tinta-2);margin-bottom:14px}
+.outras ul{display:flex;flex-wrap:wrap;gap:8px}
+.outras a{display:inline-flex;gap:8px;align-items:baseline;background:var(--fundo);border:1px solid var(--linha);border-radius:999px;padding:8px 16px;font-weight:600;font-size:14.5px}
+.outras a small{font-weight:500;color:var(--tinta-2);font-size:12.5px}
+.outras a:hover{border-color:var(--azul);color:var(--azul)}
+.secao--2{background:var(--fundo)}
+.checks{background:#fff;border:1px solid var(--linha);border-radius:10px;padding:8px 22px}
+.checks li{padding:16px 0;border-top:1px solid var(--linha)}
+.checks li:first-child{border-top:0}
+.checks li::before{content:"✓";flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:13px;font-weight:700}
+.card{border:1px solid var(--linha);border-radius:10px;overflow:hidden}
+.card__img{border-bottom:1px solid var(--linha)}
+.medida{background:var(--azul);color:#fff;padding:72px 0}
+.medida .num{color:#d3ecf9}
+.medida p:not(.mono){color:#e6f2f9;font-size:17.5px}
+.medida .bt{background:#fff;border-color:#fff;color:var(--azul-esc)}
+.medida .bt:hover{background:#e6f1f7}
+.assist{background:#fff;border:1px solid var(--linha);border-left:5px solid var(--azul);border-radius:10px;padding:48px 52px;max-width:calc(var(--faixa) - 64px)}
+.assist__num{font-size:clamp(96px,11vw,150px)}
+.assist__num small{color:var(--tinta-2)}
+.prova{gap:16px}
+.prova li{background:#fff;border:1px solid var(--linha);border-top:4px solid var(--azul);border-radius:10px;padding:26px 24px 28px}
+.jeitos{gap:16px}
+.jeito{border:1px solid var(--linha);border-radius:10px;background:#fff}
+.jeito .mono{color:var(--azul);background:#e6f1f7;border-radius:999px;padding:4px 12px;font-size:11.5px}
+.jeito--destaque{background:var(--noite);border-color:var(--noite);color:#fff}
+.jeito--destaque p:not(.mono){color:#cfdde6}
+.jeito--destaque .mono{background:rgba(255,255,255,.14);color:#fff}
+.jeito--destaque .bt{background:#fff;border-color:#fff;color:var(--azul-esc)}
+.revenda{background:var(--fundo);padding:52px 0;border-top:1px solid var(--linha)}
+.revenda p{color:var(--tinta-2)}
+.rodape{background:var(--noite);color:#fff}
+.rodape p,.rodape li{color:#c5d3dc}
+.rodape h4{color:#7fd0f5}
+.rodape__base{border-top:1px solid rgba(255,255,255,.14)}
+.rodape__base a{color:#c5d3dc}
+
+@media (max-width:1100px){
+	.nav{display:none}.cabeca .bt{margin-left:auto}
+	.cards{grid-template-columns:repeat(2,1fr)}
+	.prova{grid-template-columns:repeat(2,1fr)}
+	.rodape__grade{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+	body{font-size:16px}
+	.faixa{padding:0 20px}
+	.topo p,.topo ul li:not(:first-child){display:none}
+	.cabeca .faixa{min-height:68px;gap:16px}.cabeca__logo img{height:40px}
+	.hero .faixa:first-child{grid-template-columns:1fr;gap:36px}
+	.hero__acoes .bt{flex:1 1 100%;justify-content:center}
+	.difs{grid-template-columns:1fr 1fr}
+	.secao{padding:60px 0}
+	.cab,.bombas,.assist,.medida .faixa{grid-template-columns:1fr;gap:22px}
+	.cab{margin-bottom:30px}
+	.cards{gap:12px}.card__meta{flex-direction:column;gap:2px}
+	.jeitos{grid-template-columns:1fr}
+	.revenda .faixa{flex-direction:column;align-items:flex-start}
+	.rodape__grade{gap:30px}
+	.bt{white-space:normal;text-align:center}
+}
+@media (max-width:480px){.prova,.rodape__grade{grid-template-columns:1fr}.cabeca .bt{font-size:14px;padding:0 14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media (max-width:820px){
+	.hero{padding-top:44px}
+	.hero .faixa:last-child{margin-top:40px}
+	.difs li{padding:18px 16px;border-left:0;border-top:1px solid var(--linha)}
+	.difs li:nth-child(-n+2){border-top:0}
+	.difs li:nth-child(even){border-left:1px solid var(--linha)}
+	.hero .faixa:last-child{transform:none;margin-bottom:0;padding-bottom:44px}
+	#equipamentos{padding-top:60px}
+	.cats{grid-template-columns:1fr}
+	.cats a{grid-template-columns:120px 1fr}
+	.cats__img{height:100px}
+	.cats__txt{padding:14px 16px}.cats__txt b{font-size:17px}.cats__txt i{display:none}
+	.assist{padding:32px 24px}
+	.medida{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topo mono">
+	<div class="faixa">
+		<p>Fabricante nacional de instrumentos científicos em Piracicaba, SP</p>
+		<ul>
+			<li><a href="tel:+551934341418">(19) 3434-1418</a></li>
+			<li><a href="#">WhatsApp de vendas</a></li>
+			<li><a href="#">Área do revendedor</a></li>
+		</ul>
+	</div>
+</div>
+
+<header class="cabeca">
+	<div class="faixa">
+		<a class="cabeca__logo" href="#" aria-label="MS Tecnopon, página inicial"><img src="../tecnopon/assets/img/logo-tecnopon-azul.svg" alt="MS Tecnopon Instrumentação" width="84" height="50"></a>
+		<nav class="nav" aria-label="Menu principal">
+			<a href="#equipamentos">Produtos</a>
+			<a href="#">Sob medida</a>
+			<a href="#">Assistência e calibração</a>
+			<a href="#">A Tecnopon</a>
+			<a href="#">Conteúdo técnico</a>
+			<a href="#">Contato</a>
+			<a href="#">Loja</a>
+		</nav>
+		<a class="bt" href="#">Solicitar orçamento</a>
+	</div>
+</header>
+
+<main>
+	<section class="hero">
+		<div class="faixa">
+			<div>
+				<p class="mono num">Instrumentação científica nacional</p>
+				<h1>Instrumentos feitos para durar. <em>Assistência feita para ficar.</em></h1>
+				<p class="hero__sub">Bombas peristálticas, medidores de pH, condutivímetros, turbidímetros e muito mais. Fabricamos em Piracicaba há quase 40 anos e cuidamos de cada equipamento depois da venda.</p>
+				<div class="hero__acoes">
+					<a class="bt" href="#equipamentos">Conhecer equipamentos <i>→</i></a>
+					<a class="bt bt--linha" href="#">Solicitar orçamento</a>
+				</div>
+				<a class="hero__whats" href="#">Falar com a equipe pelo WhatsApp</a>
+			</div>
+			<a class="peca" href="#">
+				<img src="../uploads/2026/11/bomba-peristaltica-touch-screen-ms-tecnopon-serie-ldp-2-2-1024x683.webp" alt="Bomba Peristáltica TouchScreen 5 Canais LDT-105-8" width="1024" height="683">
+				<span class="peca__dados">
+					<span><span class="mono">Em destaque</span><b>Bomba Peristáltica TouchScreen 5 Canais</b></span>
+					<span class="mono">LDT-105-8</span>
+				</span>
+			</a>
+		</div>
+		<div class="faixa">
+			<ul class="difs">
+				<li><span class="mono ambar">01</span><b>Fabricação nacional</b><span>Projeto e produção em Piracicaba, SP</span></li>
+				<li><span class="mono ambar">02</span><b>Assistência e calibração</b><span>Cuidamos dos nossos produtos depois da venda</span></li>
+				<li><span class="mono ambar">03</span><b>Projetos sob medida</b><span>Do equipamento especial ao OEM</span></li>
+				<li><span class="mono ambar">04</span><b>Revendas em todo o país</b><span>Atendimento próximo, onde você estiver</span></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="secao" id="equipamentos">
+		<div class="faixa">
+			<div class="cab">
+				<div>
+					<p class="mono num">Equipamentos</p>
+					<h2>Encontre o instrumento pela categoria</h2>
+				</div>
+				<p>Cada modelo tem ficha técnica, vídeo e manual. Monte uma lista com vários itens e peça orçamento de uma vez.</p>
+			</div>
+			<ul class="cats">
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/bomba-peristaltica-cdp-201-3-tecnopon-768x432.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Bombas Peristálticas</b><small class="mono">21 modelos</small></span><i>→</i></span></a></li>
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/bomba-peristaltica-touch-screen-ms-tecnopon-serie-ldp-5-3-768x512.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Bombas Peristálticas Touch Screen</b><small class="mono">26 modelos</small></span><i>→</i></span></a></li>
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/medidor-de-ph-mpa210p-tecnopon-768x432.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Medidores de pH</b><small class="mono">7 modelos</small></span><i>→</i></span></a></li>
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/condutivimetro-bancada-mca-150-tecnopon-768x432.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Condutivímetros</b><small class="mono">5 modelos</small></span><i>→</i></span></a></li>
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/turbidimetro-mcfarland-mcf-500-tecnopon-768x432.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Turbidímetros</b><small class="mono">5 modelos</small></span><i>→</i></span></a></li>
+				<li><a href="#"><span class="cats__img"><img src="../uploads/2026/11/dcl-900-ms-tecnopon-medidor-dioxido-de-cloro.webp" alt="" loading="lazy"></span><span class="cats__txt"><span><b>Clorímetros</b><small class="mono">2 modelos</small></span><i>→</i></span></a></li>
+			</ul>
+			<div class="outras">
+				<p class="mono">Outras categorias</p>
+				<ul>
+					<li><a href="#">Câmaras Climáticas <small>07</small></a></li>
+					<li><a href="#">Fermentadores <small>06</small></a></li>
+					<li><a href="#">Mesas Dosadoras <small>03</small></a></li>
+					<li><a href="#">Controladores <small>03</small></a></li>
+					<li><a href="#">Agitadores Magnéticos <small>03</small></a></li>
+					<li><a href="#">Ponto de Fusão <small>02</small></a></li>
+					<li><a href="#">Fluorímetros <small>01</small></a></li>
+					<li><a href="#">Geradores de Vapor <small>01</small></a></li>
+					<li><a href="#">Iluminadores PAR <small>01</small></a></li>
+					<li><a href="#">Simuladores <small>01</small></a></li>
+					<li><a href="#">Teste Antiespumante <small>01</small></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="secao secao--2">
+		<div class="faixa">
+			<div class="bombas">
+				<div>
+					<p class="mono num">Carro-chefe da Tecnopon</p>
+					<h2>Bombas peristálticas nacionais, uma alternativa às importadas</h2>
+					<p>Fabricamos nossas bombas com projeto próprio. Elas custam menos que as europeias e têm assistência técnica no Brasil, com peças e suporte de quem as construiu.</p>
+					<a class="bt" href="#">Ver todas as bombas <i>→</i></a>
+				</div>
+				<ul class="checks">
+					<li>De 1 a vários canais, de bancada ou industriais</li>
+					<li>Tela touchscreen para vazão e dosagem</li>
+					<li>Assistência e reposição de tubos no Brasil</li>
+				</ul>
+			</div>
+			<div class="cards">
+				<article class="card"><a class="card__img" href="#" tabindex="-1" aria-hidden="true"><img src="../uploads/2026/11/LAP-101-3-480x480.webp" alt="" loading="lazy"></a><div class="card__corpo"><p class="card__meta mono"><b>LAP-101-3</b><span>Sob orçamento</span></p><h3>Bomba Peristáltica 1 Canal LAP-101-3</h3></div><a class="bt bt--linha" href="#">Adicionar ao pedido</a></article>
+				<article class="card"><a class="card__img" href="#" tabindex="-1" aria-hidden="true"><img src="../uploads/2026/11/bomba-peristaltica-ldp-101-3-tecnopon-480x450.webp" alt="" loading="lazy"></a><div class="card__corpo"><p class="card__meta mono"><b>LDP-101-3</b><span>Sob orçamento</span></p><h3>Bomba Peristáltica 1 Canal LDP-101-3</h3></div><a class="bt bt--linha" href="#">Adicionar ao pedido</a></article>
+				<article class="card"><a class="card__img" href="#" tabindex="-1" aria-hidden="true"><img src="../uploads/2026/11/bomba-peristaltica-ldp-301-4-tecnopon-480x450.webp" alt="" loading="lazy"></a><div class="card__corpo"><p class="card__meta mono"><b>LDP-301-4</b><span>Sob orçamento</span></p><h3>Bomba Peristáltica 1 Canal LDP-301-4</h3></div><a class="bt bt--linha" href="#">Adicionar ao pedido</a></article>
+				<article class="card"><a class="card__img" href="#" tabindex="-1" aria-hidden="true"><img src="../uploads/2026/11/bomba-peristaltica-touch-screen-ms-tecnopon-serie-ldp-5-480x480.webp" alt="" loading="lazy"></a><div class="card__corpo"><p class="card__meta mono"><b>LDP-201-3</b><span>Sob orçamento</span></p><h3>Bomba Peristáltica 1 Canal Touch Screen LDP-201-3</h3></div><a class="bt bt--linha" href="#">Adicionar ao pedido</a></article>
+			</div>
+		</div>
+	</section>
+
+	<section class="medida">
+		<div class="faixa">
+			<div>
+				<p class="mono num">Sob medida, OEM e white label</p>
+				<h2>Precisa de um instrumento que não existe no catálogo?</h2>
+				<p>Desenvolvemos equipamentos especiais conforme a sua aplicação. Também produzimos para marcas próprias, em OEM e white label, com a engenharia e a assistência da Tecnopon.</p>
+			</div>
+			<a class="bt bt--preto" href="#">Conheça os projetos sob medida <i>→</i></a>
+		</div>
+	</section>
+
+	<section class="secao">
+		<div class="faixa assist">
+			<p class="assist__num" aria-hidden="true">30<small>anos em operação</small></p>
+			<div>
+				<p class="mono num">Assistência e calibração</p>
+				<h2>Quem fabrica também cuida do equipamento</h2>
+				<p>A assistência técnica dos produtos Tecnopon é feita pela própria equipe que os projeta, com calibração e reposição de peças. Há instrumentos nossos que monitoram represas há 30 anos e seguem funcionando.</p>
+				<a class="bt bt--linha" href="#">Assistência técnica e calibração <i>→</i></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="secao secao--2">
+		<div class="faixa">
+			<div class="cab">
+				<div>
+					<p class="mono num">Por que a Tecnopon</p>
+					<h2>Quase 40 anos fazendo instrumentos que duram</h2>
+				</div>
+				<p><a class="bt bt--linha" href="#">Conheça a Tecnopon</a></p>
+			</div>
+			<ul class="prova">
+				<li><h3>Quase 40 anos de história</h3><p>Fabricante nacional de instrumentos científicos, com sede em Piracicaba, SP.</p></li>
+				<li><h3>Equipamentos com 30 anos em operação</h3><p>Há instrumentos nossos que monitoram represas há três décadas e seguem funcionando.</p></li>
+				<li><h3>Ensaios do Inmetro</h3><p>Nossos materiais de referência participam dos ensaios interlaboratoriais do Inmetro, com bons resultados.</p></li>
+				<li><h3>Também em Portugal</h3><p>Há 2 anos temos um braço em Portugal para atender o mercado europeu.</p></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="secao">
+		<div class="faixa">
+			<div class="cab">
+				<div>
+					<p class="mono num">Como atendemos</p>
+					<h2>Equipamentos sob orçamento e peças na loja online</h2>
+				</div>
+				<p>Equipamentos seguem por orçamento e projetos especiais nascem sob encomenda. Só as peças de reposição se compram direto na loja.</p>
+			</div>
+			<div class="jeitos">
+				<article class="jeito">
+					<p class="mono ambar">Compra online</p>
+					<h3>Compre consumíveis e reposição</h3>
+					<p>Eletrodos, tubos, cubetas, reagentes e fontes. Pague por Pix, cartão ou boleto e calcule o frete pelo CEP. Os padrões de turbidez e de cloro são exclusivos da Tecnopon.</p>
+					<a class="bt bt--linha" href="#">Visitar a loja de consumíveis</a>
+				</article>
+				<article class="jeito jeito--destaque">
+					<p class="mono ambar">Sob orçamento</p>
+					<h3>Monte uma lista de equipamentos</h3>
+					<p>Adicione vários itens ao pedido e envie. Nossa equipe responde com preço, prazo e frete, sem pagamento no site.</p>
+					<a class="bt" href="#">Ver meu pedido</a>
+				</article>
+				<article class="jeito">
+					<p class="mono ambar">Sob encomenda</p>
+					<h3>Peça um projeto sob medida</h3>
+					<p>Câmaras climáticas e equipamentos especiais, com dimensionamento e transporte dedicado.</p>
+					<a class="bt bt--linha" href="#">Solicitar projeto</a>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="revenda">
+		<div class="faixa">
+			<div>
+				<h2>Revenda os produtos da Tecnopon</h2>
+				<p>Temos revendas em todo o país. No cadastro, você acessa a área do revendedor com a tabela de preços.</p>
+			</div>
+			<a class="bt" href="#">Seja um revendedor</a>
+		</div>
+	</section>
+</main>
+
+<footer class="rodape">
+	<div class="faixa rodape__grade">
+		<div>
+			<img src="../tecnopon/assets/img/logo-tecnopon-branco.svg" alt="MS Tecnopon" width="100" height="60">
+			<p>Instrumentos científicos desenvolvidos e fabricados no Brasil, com assistência técnica própria.</p>
+		</div>
+		<div>
+			<h4>Produtos</h4>
+			<ul>
+				<li><a href="#">Bombas Peristálticas</a></li>
+				<li><a href="#">Bombas Peristálticas Touch Screen</a></li>
+				<li><a href="#">Medidores de pH</a></li>
+				<li><a href="#">Condutivímetros</a></li>
+				<li><a href="#">Turbidímetros</a></li>
+				<li><a href="#">Loja de consumíveis</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>A Tecnopon</h4>
+			<ul>
+				<li><a href="#">Quem somos</a></li>
+				<li><a href="#">Projetos sob medida e white label</a></li>
+				<li><a href="#">Assistência técnica e calibração</a></li>
+				<li><a href="#">Representações</a></li>
+				<li><a href="#">Seja um revendedor</a></li>
+				<li><a href="#">Conteúdo técnico</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Atendimento</h4>
+			<ul>
+				<li><a href="#">WhatsApp (19) 99801-1418</a></li>
+				<li><a href="tel:+551934341418">(19) 3434-1418</a></li>
+				<li><a href="mailto:contato@tecnopon.com.br">contato@tecnopon.com.br</a></li>
+				<li>Piracicaba, SP</li>
+			</ul>
+		</div>
+	</div>
+	<div class="faixa rodape__base mono">
+		<p>© 2026 MS Tecnopon Instrumentação. Tecnopon Equipamentos Especiais Ltda. · CNPJ 60.160.975/0001-09</p>
+		<p><a href="#">Política de privacidade</a></p>
+	</div>
+</footer>
+</body>
+</html>
